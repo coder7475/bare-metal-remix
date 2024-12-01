@@ -9,7 +9,6 @@ npx create-remix@latest --template coder7475/bare-metal-remix
 ## What's in the stack
 
 - [GitHub Actions](https://github.com/features/actions) for deploy on merge to production and staging environments
-- Email/Password Authentication with [Firebase]
 - Database ORM with [TypeGoose and Mongoose](https://prisma.io)
 - Styling with [Tailwind](https://tailwindcss.com/)
 - End-to-end testing with [Cypress](https://cypress.io)
