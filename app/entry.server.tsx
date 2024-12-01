@@ -11,6 +11,7 @@ import { createReadableStreamFromReadable } from "@remix-run/node";
 import { RemixServer } from "@remix-run/react";
 import { isbot } from "isbot";
 import { renderToPipeableStream } from "react-dom/server";
+import { connect } from "mongoose";
 
 const ABORT_DELAY = 5_000;
 
@@ -118,3 +119,10 @@ function handleBrowserRequest(
     setTimeout(abort, ABORT_DELAY);
   });
 }
+
+// Establish MongoDB connection once server boots up
+connect(process.env.MONGODB_URL as string)
+  .then(() => console.log({ mongoDb: "Connected" }))
+  .catch((err) => {
+    console.log({ mongoErr: err });
+  });
