@@ -9,7 +9,7 @@ npx create-remix@latest --template coder7475/bare-metal-remix
 ## What's in the stack
 
 - [GitHub Actions](https://github.com/features/actions) for deploy on merge to production and staging environments
-- MongoDB Database ORM with [TypeGoose and Mongoose](https://typegoose.github.io)
+- MongoDB Database ORM with [TypeGoose](https://typegoose.github.io) & [Mongoose](https://mongoosejs.com/)
 - Styling with [Tailwind](https://tailwindcss.com/)
 - End-to-end testing with [Cypress](https://cypress.io)
 - Local third party request mocking with [MSW](https://mswjs.io)
@@ -21,6 +21,8 @@ npx create-remix@latest --template coder7475/bare-metal-remix
 Not a fan of bits of the stack? Fork it, change it, and use `npx create-remix --template your/repo`! Make it your own.
 
 ## Development
+
+Start the Journey:
 
 ```sh
 git init # if you haven't already
