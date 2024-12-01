@@ -28,10 +28,10 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
-      - name: Deploy to Preview Server
+      - name: Deploy to VPS Server
         uses: appleboy/ssh-action@v1.1.0
         with:
           host: "${{ secrets.PREVIEW_SERVER_HOST }}"
           username: "${{ secrets.PREVIEW_SERVER_USERNAME }}"
           key: "${{ secrets.PREVIEW_SERVER_SSH_PRIVATE_KEY }}"
-          script: ./orbit/orbit_preview_deploy.sh
+          script: ~/bare-metal-remix/deploy.sh
