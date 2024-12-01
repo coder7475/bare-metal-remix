@@ -34,4 +34,4 @@ jobs:
           host: "${{ secrets.PREVIEW_SERVER_HOST }}"
           username: "${{ secrets.PREVIEW_SERVER_USERNAME }}"
           key: "${{ secrets.PREVIEW_SERVER_SSH_PRIVATE_KEY }}"
-          script: ~/bare-metal-remix/deploy.sh
+          script: ~/bare-metal-remix/scripts/deploy.sh
