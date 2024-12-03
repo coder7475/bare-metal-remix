@@ -8,7 +8,7 @@ npx create-remix@latest --template coder7475/bare-metal-remix
 
 ## What's in the stack
 
-- [GitHub Actions](https://github.com/features/actions) for deploy on merge to production and staging environments
+- [GitHub Actions](https://github.com/features/actions) for deploy on merge to production environment
 - MongoDB Database ORM with [TypeGoose](https://typegoose.github.io) & [Mongoose](https://mongoosejs.com/)
 - Styling with [Tailwind](https://tailwindcss.com/)
 - End-to-end testing with [Cypress](https://cypress.io)
